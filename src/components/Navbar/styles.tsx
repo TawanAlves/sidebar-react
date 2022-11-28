@@ -30,7 +30,7 @@ export const ContainerSidebar = styled.div<{ transform: string }>(
     overflow-y: auto;
     background: #151515;
     transition: all 0.3s;
-    transform: translateX(${props.transform});      
+    transform: translateX(${props.transform});
   `
 );
 export const MenuIcon = styled(FaBars)`
@@ -51,3 +51,36 @@ export const Topbar = styled.div`
   top: 0;
   display: flex;
 `;
+
+export const ItensContainer = styled.div`
+  margin-top: 50px;
+`;
+
+export const Title = styled.p`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #979797;
+  margin-left: 10px;
+`;
+
+export const Button = styled.div`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 10px 5px 10px;
+  padding: 14px 10px;
+  width: 200px;
+
+  &:hover {
+    background: #454545;
+    border-radius: 10px;
+    ${Title} {
+      color: #fff;
+    }
+  }
+`;
+
+export const Div = styled.div``;
